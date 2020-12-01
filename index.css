@@ -33,9 +33,7 @@ header p {
     /* opacity: 0; */
     font-weight: bold;
 }
-*{
-    border: 1px solid red;
-}
+
 #nav ul {
     margin: 0;
     padding: 0;

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homepage.css">
+    <title>Responsive Website</title>
+</head>
+<body>
+    <header>
+        <p id="menu" >Menu</p>
+        <nav id="nav">
+            <ul>
+                <li>Tacos</li>
+                <li>Beers</li>
+                <li>Wines</li>
+                <li>Desserts</li>
+                <li>Reservations</li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="wrapper">
+            <div class="main-container">
+                <div class="main">
+                    <h1>Terry's Taco Joint</h1>
+                    <p>Pretty Good Tacos!</p>
+                </div>
+            </div>
+            <div class="price-container">
+                <div class="price">  
+                    <h1>$1.99</h1>
+                    <p>Tacos</p>
+                </div>
+                <div class="price">
+                    <h1>$3.99</h1>
+                    <p>Kombucha</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="services">
+            <div>
+                <img src="" alt="Image of Tacos">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, totam.</p>
+            </div>
+            <div>
+                <img src="" alt="Cup of Beer">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, rem!</p>
+            </div>
+            <div>
+                <img src="" alt="Wine">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, totam.</p>
+            </div>
+            <div>
+                <img src="" alt="Music">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, totam.</p>
+            </div>
+        </div>
+
+        <div class="more-info-con">
+            <div class="more-info">
+                <img src="img/pie.png" alt="Tacos">
+                <div class="info">
+                    <h2>Featured Tacos</h2>
+                    <p>Slim Profile, easy to hold and loaded with cheese</p>
+                    <p>This is the one you have been waiting for</p>
+                    <button>Learn More --></button>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+    <footer>
+        <div></div>
+        <p>Instant Grams</p>
+        <div></div>
+    </footer>
+    <script>
+     const menu =   document.querySelector("#menu");
+     document.getElementById('menu').onclick = function () {
+         document.getElementById("nav").style.display = "block";
+     }
+    </script>
+</body>
+</html>

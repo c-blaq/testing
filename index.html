@@ -3,12 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="homepage.css">
+    <script src="https://kit.fontawesome.com/de579d51f6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
     <title>Responsive Website</title>
 </head>
 <body>
     <header>
-        <p id="menu" >Menu</p>
+        <p id="menu" >
+            <span><i class="fas fa-bars"></i></span>
+            Menu
+        </p>
         <nav id="nav">
             <ul>
                 <li>Tacos</li>
@@ -42,20 +46,24 @@
 
         <div class="services">
             <div>
-                <img src="" alt="Image of Tacos">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, totam.</p>
+                <img src="img/pie.png" alt="Image of Tacos">
+                <h3>Tacos</h3>
+                <p class="service-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, totam.</p>
             </div>
             <div>
-                <img src="" alt="Cup of Beer">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, rem!</p>
+                <span class="icons"><i class="fas fa-beer fa-3x" id="beer"></i></span>
+                <h3>Beer</h3>
+                <p class="service-info">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, rem!</p>
             </div>
             <div>
-                <img src="" alt="Wine">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, totam.</p>
+                <span class="icons"><i class="fas fa-wine-glass fa-3x" id="wine"></i></span>
+                <h3>Wine</h3>
+                <p class="service-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, totam.</p>
             </div>
             <div>
-                <img src="" alt="Music">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, totam.</p>
+                <span class="icons"><i class="fas fa-music fa-3x" id="music"></i></span>
+                <h3>Music </h3>
+                <p class="service-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea, totam.</p>
             </div>
         </div>
 
@@ -81,6 +89,11 @@
      const menu =   document.querySelector("#menu");
      document.getElementById('menu').onclick = function () {
          document.getElementById("nav").style.display = "block";
+
+    document.getElementById('menu').onmouseout = function () {
+        document.getElementById("nav").style.display = "none";
+
+    }
      }
     </script>
 </body>

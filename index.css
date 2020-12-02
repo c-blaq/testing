@@ -1,7 +1,7 @@
-/* {
-    text-align: center;
-    font-weight: bold;
-} */
+*{
+    /* border: 1px solid red; */
+    /* text-align: center; */
+}
 
 body {
     margin: 0;
@@ -12,20 +12,27 @@ body {
     background-size: contain/cover;
     background-repeat: no-repeat;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
 }
 header, section, footer {
     width: 75%;
-    margin: 0 auto;
+    margin: 1.5rem  auto;
 }
 header p {
     text-decoration: none;
     text-align: center;
-    padding:  1rem;
+    padding:  0.5rem 1rem;
     color: #000;
     background: rgb(255, 198, 0);
     display: inline-block;
-    margin: 0.5rem;
+    font-weight: bold;
+    /* margin: 0.5rem; */
     
+}
+header p:hover {
+    border: 2px solid black;
+    border-radius: 5px;
+    transform: scale(1.2);
 }
  #nav {
     display: none;
@@ -33,9 +40,7 @@ header p {
     /* opacity: 0; */
     font-weight: bold;
 }
-*{
-    border: 1px solid red;
-}
+
 #nav ul {
     margin: 0;
     padding: 0;
@@ -50,6 +55,7 @@ header p {
     margin: 0.5rem 0.5rem;
     padding: 1rem;
     text-align: center;
+    word-wrap: break-word;
     /* flex-wrap: wrap; */
     /* width: 25; */
     /* box-sizing: border-box; */
@@ -60,7 +66,8 @@ header p {
 
 
 .main-container {
-    background: #fff;
+    background: url('img/restaurant.jpg') no-repeat, #fff;
+    background-size: cover;
     width: 100%;
     height: 25rem;
     margin-top: 1.2rem;
@@ -69,9 +76,10 @@ header p {
     /* justify-content: center; */
 }
 .main {
-    width: 80%;
+    max-width: 80%;
     margin: auto;
 }
+
 .main h1, .main p {
     display: inline-block;
     background: rgb(255, 198, 0);
@@ -106,13 +114,39 @@ header p {
 .services div, .more-info-con {
     background: #fff;
     margin-top: 1rem;
+    font-weight: bold;
+}
+.services div {
     padding: 1rem;
     text-align: center;
-    font-weight: bold;
+}
+.services img {
+    width: 45px;
+    height: 45px;
+}
+.service-info {
+    color: rgba(0, 0, 0, 0.5)
+}
+#beer {
+    color: rgb(255, 212, 56);
+}
+#wine {
+    color: rgb(175, 17, 22)
+}
+#music {
+    color: rgb(0, 169, 190);
+}
+.more-info-con {
+    text-align: center;
+    padding: 2.5rem;
+}
+.more-info > div {
+    text-align: start;
 }
 
 .more-info img {
-    width: 50%;
+    margin: auto;
+    width: 100%;
 }
 button {
     background: rgb(255, 198, 0);
@@ -132,7 +166,7 @@ footer p, footer div {
     margin: 1rem 0 20rem;
 }
 footer div {
-    background: linear-gradient(to left, rgb(255, 198, 0), rgb(216, 87, 184));
+    /* background: linear-gradient(to left, rgb(255, 198, 0), rgb(216, 87, 184)); */
     width: 2rem;
     height: 0.5rem;
 } 
@@ -147,6 +181,10 @@ footer div:nth-of-type(2) {
 @media screen and (min-width: 575px) {
     header, section, footer {
     width: 80%;
+ }
+ .main {
+     width: 50%;
+     margin: auto 2rem;
  }
  .price-container {
      display: flex;
@@ -166,6 +204,10 @@ footer div:nth-of-type(2) {
  .services div {
      width: 42%;
  }
+ .more-info img {
+    width: 399px;
+    height: 299px;
+ }
  
  footer p, footer div {
     margin-bottom:  10rem;
@@ -176,12 +218,12 @@ footer div:nth-of-type(2) {
 }
 
 @media screen and (min-width: 700px) {
-    header a {
+    header p {
         display: none;
     }
     #nav {
         display: flex;
-        margin: 2rem 0 1rem;
+        /* margin: 2rem 0 1rem; */
     }
     #nav ul {
         margin: 0;
@@ -217,6 +259,11 @@ footer div:nth-of-type(2) {
     }
     .more-info {
         display: flex;
+        max-width: 80%;
+       
+    }
+    .info {
+        margin: auto
     }
    
 }
